@@ -14,3 +14,8 @@
 .prose-scale {
   zoom: 0.9;
 }
+
+.prose-scale h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
