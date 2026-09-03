@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: home } = await useAsyncData('home', () => queryCollection('content').path('/').first())
+const { data: me } = await useAsyncData('me', () => queryCollection('me').first())
 const { data: socials } = await useAsyncData('socials', () => queryCollection('socials').all())
 const { data: projects } = await useAsyncData('projects', () => queryCollection('projects').all())
 </script>
@@ -9,7 +9,7 @@ const { data: projects } = await useAsyncData('projects', () => queryCollection(
     <UPageBody>
       <UContainer class="lg:mt-36 md:mt-24 mt-24">
         <div class="prose-scale">
-          <ContentRenderer v-if="home" :value="home" />
+          <ContentRenderer v-if="me" :value="me" />
 
           <USeparator class="my-6" />
 

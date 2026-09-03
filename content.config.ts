@@ -2,9 +2,9 @@ import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 export default defineContentConfig({
   collections: {
-    content: defineCollection({
+    me: defineCollection({
       type: 'page',
-      source: '*.md',
+      source: 'me.md',
     }),
     socials: defineCollection({
       type: 'data',
