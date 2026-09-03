@@ -1,11 +1,14 @@
 <script setup lang="ts">
 useHead({
-  title: 'Kübra Çetinkaya',
+  title: 'Kübra ÇETİNKAYA',
 })
 </script>
 
 <template>
   <UApp>
+    <ClientOnly>
+      <ArtDots />
+    </ClientOnly>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
