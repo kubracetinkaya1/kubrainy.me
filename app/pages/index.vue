@@ -9,9 +9,7 @@ const { data: projects } = await useAsyncData('projects', () => queryCollection(
     <UPageBody>
       <UContainer class="lg:mt-36 md:mt-24 mt-24">
         <div class="prose-scale">
-          <ClientOnly>
-            <ContentRenderer v-if="home" :value="home" />
-          </ClientOnly>
+          <ContentRenderer v-if="home" :value="home" />
 
           <USeparator class="my-6" />
 
