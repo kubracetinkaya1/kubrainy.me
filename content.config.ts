@@ -4,7 +4,7 @@ export default defineContentConfig({
   collections: {
     me: defineCollection({
       type: 'page',
-      source: 'me.md',
+      source: '**/*.md',
     }),
     socials: defineCollection({
       type: 'data',
