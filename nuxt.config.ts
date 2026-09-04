@@ -4,10 +4,4 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxt/content'],
   css: ['~/assets/css/main.css'],
-  nitro: {
-    prerender: {
-      routes: ['/'],
-      crawlLinks: true,
-    },
-  },
 })
